@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday - сервис для создания поздравлений</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <script src="script/html2canvas.min.js"></script>
+    <script src="script/script.js" defer></script>
+</head>
+
+<body class="women">
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__button-wrapper">
+                <button class="header__button-change header__button-change-text">Поменять поздравление</button>
+                <button class="header__button-change header__button-change-image">Поменять фон</button>
+            </div> 
+            <div class="header__button-wrapper">
+                <button class="header__button-gender header__button-gender-men" aria-label="выбрать мужские открытки"></button>
+                <button class="header__button-gender header__button-gender-women" aria-label="выбрать женские открытки"></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="card">
+        <div class="container card__container">
+            <div class="card__wrapper">
+                <img class="card__image" src="img/fon/card-w-01.jpg" alt="фон открытки">
+                    <p class="card__text">
+                        Поздравляю с днем рожденья!<br>
+                        Пусть будет жизнь полна веселья,<br>
+                        Не будет грусти и хлопот,<br>
+                        А только счастье круглый год!<br>
+                        <br>
+                        Желаю творческих успехов,<br>
+                        Прекрасных дней, улыбок, смеха.<br>
+                        Любви, душевного тепла,<br>
+                        Как сказка, чтобы жизнь была!<br>
+                    </p>
+                </div>
+            <button class="card__button">Скачать поздравление</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__wrapper">
+                <p class="footer__text-design">Design: Anastasia Ilina</p>
+                <p class="footer__text-coder">Сoder: Nadezhda</p> 
+                <p class="footer__text-card">© HBCard, 2022</p>
+            </div> 
+
+            <ul class="footer__contacts">
+                <li class="footer__icon "><a href="#" class="footer__link footer__link-vk"><object class="icon icon-vk" data="img/vk.svg" type="image/svg+xml"><img src="img/vk.jpg" /></object></a></li>
+                <li class="footer__icon "><a href="#" class="footer__link footer__link-tg"><object class="icon icon-tg" data="img/telegram.svg" type="image/svg+xml"><img src="img/telegram.jpg" /></object></a></li>
+                <li class="footer__icon "><a href="#" class="footer__link footer__link-pinterest"><object class="icon pinterest" data="img/pinterest.svg" type="image/svg+xml"><img src="img/pinterest.jpg" /></object></a></li>
+                <li class="footer__icon "><a href="#" class="footer__link footer__link-stumbleupon"><object class="icon icon-stumbleupon" data="img/stumbleupon.svg" type="image/svg+xml"><img src="img/stumbleupon.jpg" /></object></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
