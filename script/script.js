@@ -8,9 +8,10 @@ const buttonImage = document.querySelector('.header__button-change-image');
 
 const state = {
     gender: body.classList.contains('women') ? 'women' : 'men',
+    editedText: '',
 };
 
-const getRandomForArr = (arr) => {
+const getRandomFromArr = (arr) => {
     const randomNumber = Math.floor(Math.random() * arr.length);
     return arr[randomNumber];
 };
@@ -25,13 +26,14 @@ const changeHtml = () => {
     }
 
     cardImage.src = `img/fon/${state.photo}`;
-    cardText.innerHTML = state.text.replaceAll('\n', '<br>');
+    cardText.innerHTML = state.editedText || state.text.replaceAll('\n', '<br>');
+    
 }
 
 const getDataToCard = () => {
     getData().then(data => {
-        state.text = getRandomForArr(data.text[state.gender]);
-        state.photo = getRandomForArr(data.photo[state.gender]);
+        state.text = getRandomFromArr(data.text[state.gender]);
+        state.photo = getRandomFromArr(data.photo[state.gender]);
         changeHtml();
     });
 };
@@ -56,15 +58,16 @@ const changeToWomen = () => {
 };
 
 const changeText = () => {
+    state.editedText = '';
     getData().then(data => {
-        state.text = getRandomForArr(data.text[state.gender]);
+        state.text = getRandomFromArr(data.text[state.gender]);
         changeHtml();
     })
 };
 
 const changeImage = () => {
     getData().then(data => {
-        state.photo = getRandomForArr(data.photo[state.gender]);
+        state.photo = getRandomFromArr(data.photo[state.gender]);
         changeHtml();
     })
 };
@@ -76,18 +79,30 @@ buttonImage.addEventListener('click', changeImage);
 getDataToCard();
 
 const cardWrapper = document.querySelector('.card__wrapper');
-const cardButton = document.querySelector('.card__button');
+const cardButtonDownload = document.querySelector('.card__button-download');
 
-cardButton.addEventListener('click', () => {
+cardButtonDownload.addEventListener('click', () => {
     html2canvas(cardWrapper).then(canvas => {
-
         const dataURL = canvas.toDataURL('image/png');
-
         const link = document.createElement('a');
         link.href = dataURL;
         link.download = 'cardWrapper.png';
-
         link.click();
     });
+});
+
+const cardButtonEdit = document.querySelector('.card__button-edit');
+
+cardButtonEdit.addEventListener('click', () => {
+
+    if (cardText.isContentEditable) {
+        cardText.contentEditable = false;
+        cardButtonEdit.textContent = 'Редактировать текст';
+        state.editedText = cardText.innerText;
+    } else {
+        cardText.contentEditable = true;
+        cardText.focus();
+        cardButtonEdit.textContent = 'Сохранить изменения';
+    }
 });
 
