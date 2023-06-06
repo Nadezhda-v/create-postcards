@@ -1,6 +1,7 @@
 # Учебный проект "Сервис для создания поздравлений"
-<img src="https://github.com/Nadezhda-v/create-postcards/assets/109743172/a84ad6c6-3c3f-4322-96a5-884e94aaaebf" alt="main" width="500"/>
-<img src="https://github.com/Nadezhda-v/create-postcards/assets/109743172/f9b72bf9-feb7-4cb4-83d3-2a82d34cb121" alt="auto-park" width="500"/>
+
+<img src="https://github.com/Nadezhda-v/create-postcards/assets/109743172/a84ad6c6-3c3f-4322-96a5-884e94aaaebf" alt="main" width="400"/>
+<img src="https://github.com/Nadezhda-v/create-postcards/assets/109743172/f9b72bf9-feb7-4cb4-83d3-2a82d34cb121" alt="auto-park" width="400"/>
 
 Посмотреть [проект](https://nadezhda-v.github.io/create-postcards/)
 
@@ -13,10 +14,13 @@
 3. Сохранение открыток: Можно сохранять созданные открытки для последующего использования
 
 ## Особенности проекта
-- ✅ Адаптивный интерфейс
-- ✅ Наличие разноообразных шаблонов для создания уникальных открыток
-- ✅ Возможность скачивания открыток в формате png
+- Адаптивный интерфейс
+- Наличие разноообразных шаблонов для создания уникальных открыток
+- Возможность скачивания открыток в формате png
 
 ## Стек технологий
-<img src="https://camo.githubusercontent.com/d63d473e728e20a286d22bb2226a7bf45a2b9ac6c72c59c0e61e9730bfe4168c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48544d4c352d4533344632363f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465"> <img src="https://camo.githubusercontent.com/3a0f693cfa032ea4404e8e02d485599bd0d192282b921026e89d271aaa3d7565/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f435353332d3135373242363f7374796c653d666f722d7468652d6261646765266c6f676f3d63737333266c6f676f436f6c6f723d7768697465">
-<img src="https://camo.githubusercontent.com/93c855ae825c1757f3426f05a05f4949d3b786c5b22d0edb53143a9e8f8499f6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d3332333333303f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d463744463145">
+<span>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="Иконка HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="Иконка CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Иконка JavaScript">
+</span>
